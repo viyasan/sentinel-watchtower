@@ -113,7 +113,6 @@ This prototype addresses compliance requirements under:
 ## Author
 
 **Viyasan Ariyarathnam**
-- Former Global Product Manager, Loyalty Rewards with Crypto — Mastercard
 - Builder of [StablecoinStats.ca](https://stablecoinstats.ca)
 - Expertise in crypto partnerships, compliance frameworks, and enterprise integration
 
@@ -121,6 +120,4 @@ This prototype addresses compliance requirements under:
 
 ## License
 
-This project is for portfolio and demonstration purposes.
-
-*Built with Claude by Anthropic · February 2026*
+This project is currently for portfolio and demonstration purposes. Exploring commericialization. 
