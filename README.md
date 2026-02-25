@@ -12,6 +12,8 @@ Sentinel is a working prototype of an AI-powered Anti-Money Laundering (AML) com
 - **Alert Queue** — 12 cases across 3 risk tiers (High / Medium / Auto-Resolved), sorted by severity
 - **Overview / Daily Brief** — Command center showing alert breakdown, pending filings, priority cases, SLA status, and QA pipeline
 - **Case Detail View** — Full customer profiles with transaction timelines, risk indicators, and filing requirements
+- **AI Case Analysis** - Analyzes case by pulling various 3rd party data together for senior approval
+- **Case Log Internal View** - Tracking case log activity, including view, shares, copies, etc. 
 
 ### 7-System Intelligence Stack
 Each case includes realistic mock data from the actual tools used by Canadian crypto compliance teams:
