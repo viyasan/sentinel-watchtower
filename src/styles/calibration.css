@@ -1,0 +1,184 @@
+.calib-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(50,48,47,0.5);
+  display: grid;
+  place-items: center;
+  z-index: 100;
+}
+
+.calib-modal {
+  background: white;
+  border-radius: 16px;
+  width: 520px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.calib-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.calib-title {
+  font-size: 14px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.calib-close {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--text-tertiary);
+}
+
+.calib-close:hover {
+  background: var(--surface);
+}
+
+.calib-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.calib-question {
+  background: var(--gold-bg);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-left: 3px solid var(--gold);
+}
+
+.calib-q-text {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.calib-my {
+  margin-bottom: 16px;
+}
+
+.calib-options {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.calib-opt {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: white;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.calib-opt:hover {
+  background: var(--surface);
+}
+
+.calib-opt.active {
+  background: var(--text);
+  color: white;
+  border-color: var(--text);
+}
+
+.calib-responses {
+  margin-bottom: 12px;
+}
+
+.calib-resp {
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-top: 6px;
+}
+
+.calib-resp.pending {
+  opacity: 0.6;
+}
+
+.calib-resp-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.calib-resp-name {
+  font-weight: 600;
+  flex: 1;
+}
+
+.calib-resp-status {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.calib-resp-note {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.calib-consensus {
+  background: var(--risk-low-bg);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--risk-low);
+  font-weight: 500;
+}
+
+.calib-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--border);
+}
+
+.calib-btn-close {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: white;
+  font: 600 12px var(--font);
+  cursor: pointer;
+}
+
+.calib-btn-close:hover {
+  background: var(--surface);
+}
+
+.calib-btn-apply {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--text);
+  color: white;
+  font: 600 12px var(--font);
+  cursor: pointer;
+}
+
+.calib-btn-apply:hover {
+  opacity: 0.9;
+}
+
+.calib-btn-apply:disabled {
+  opacity: 0.4;
+}

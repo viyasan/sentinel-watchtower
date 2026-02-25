@@ -1,0 +1,114 @@
+:root {
+  --bg: #FFF;
+  --surface: #F9F9F7;
+  --surface2: #F3F2EF;
+  --border: #ECEAE6;
+  --border-subtle: #F3F2EF;
+  --text: #32302F;
+  --text-secondary: #807D78;
+  --text-tertiary: #A8A5A0;
+  --gold: #D4A843;
+  --gold-bg: #FBF6EA;
+  --gold-dark: #8B7230;
+  --risk-high: #C0392B;
+  --risk-high-bg: #FDF2F1;
+  --risk-med: #B7841A;
+  --risk-med-bg: #FDF8EE;
+  --risk-low: #2D8653;
+  --risk-low-bg: #F1F9F4;
+  --eftr: #2C6FAD;
+  --eftr-bg: #EDF4FC;
+  --font: 'DM Sans', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  --shadow-sm: 0 1px 3px rgba(50,48,47,0.06);
+  --shadow-md: 0 2px 8px rgba(50,48,47,0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: var(--font);
+  transition: background 0.15s;
+}
+
+.mono {
+  font-family: var(--mono);
+}
+
+.label-sm {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 4px;
+}
+
+.body-text {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.body-text.muted {
+  color: var(--text-secondary);
+}
+
+.section-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.score {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  font-family: var(--mono);
+}
+
+.tag {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.tag-high {
+  background: var(--risk-high-bg);
+  color: var(--risk-high);
+}
+
+.tag-med {
+  background: var(--risk-med-bg);
+  color: var(--risk-med);
+}
+
+.tag-low {
+  background: var(--risk-low-bg);
+  color: var(--risk-low);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}

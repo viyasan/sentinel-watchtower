@@ -1,0 +1,216 @@
+.ai-panel {
+  border-top: 1px solid var(--border);
+  padding: 16px 24px;
+}
+
+.ai-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.ai-btn {
+  flex: 1;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: white;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+.ai-btn:hover {
+  background: var(--surface);
+}
+
+.ai-btn.active {
+  background: var(--text);
+  color: white;
+  border-color: var(--text);
+}
+
+.ai-btn:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.ai-response {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 16px;
+  max-height: 260px;
+  overflow-y: auto;
+  font-size: 12px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.ai-loading {
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+.decision-bar {
+  border-top: 2px solid var(--text);
+  padding: 14px 24px;
+  background: var(--surface);
+}
+
+.decision-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.decision-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text);
+}
+
+.decision-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.decision-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.decision-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: white;
+  font: 600 12px var(--font);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.decision-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.decision-btn.str {
+  color: var(--risk-high);
+}
+
+.decision-btn.lvctr {
+  color: var(--risk-med);
+}
+
+.decision-btn.eftr {
+  color: var(--eftr);
+}
+
+.decision-btn.dismiss {
+  color: var(--text-secondary);
+}
+
+.decision-btn.escalate {
+  color: var(--text);
+}
+
+.decision-btn.picked {
+  border-width: 2px;
+}
+
+.decision-btn.str.picked {
+  background: var(--risk-high-bg);
+  border-color: var(--risk-high);
+}
+
+.decision-btn.lvctr.picked {
+  background: var(--risk-med-bg);
+  border-color: var(--risk-med);
+}
+
+.decision-btn.eftr.picked {
+  background: var(--eftr-bg);
+  border-color: var(--eftr);
+}
+
+.decision-btn.dismiss.picked {
+  background: var(--surface);
+  border-color: var(--text-secondary);
+}
+
+.decision-btn.escalate.picked {
+  background: var(--surface2);
+  border-color: var(--text);
+}
+
+.decision-confirm {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: var(--risk-low-bg);
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--risk-low);
+  font-weight: 500;
+}
+
+.qa-review-bar {
+  border-top-color: var(--gold);
+}
+
+.qa-info {
+  margin-bottom: 10px;
+}
+
+.qa-info-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.qa-approve {
+  color: var(--risk-low) !important;
+}
+
+.qa-approve.picked {
+  background: var(--risk-low-bg) !important;
+  border-color: var(--risk-low) !important;
+}
+
+.qa-return {
+  color: var(--risk-med) !important;
+}
+
+.qa-return.picked {
+  background: var(--risk-med-bg) !important;
+  border-color: var(--risk-med) !important;
+}
+
+.qa-override {
+  color: var(--risk-high) !important;
+}
+
+.qa-override.picked {
+  background: var(--risk-high-bg) !important;
+  border-color: var(--risk-high) !important;
+}
+
+.qa-notes {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--font);
+  font-size: 12px;
+  resize: none;
+  outline: none;
+}
+
+.qa-notes:focus {
+  border-color: var(--text-tertiary);
+}
